@@ -1,0 +1,6 @@
+<input
+   [value]="inputValue"
+   (keyup.enter)="onEnter($event)"
+   (blur)="onBlur($event.target.value)"
+>
+<p><strong>{{inputValue}}</strong></p>

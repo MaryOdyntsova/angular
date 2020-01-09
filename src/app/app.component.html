@@ -1,0 +1,31 @@
+<!--<div class="container">-->
+  <!--<h1>Angular Components</h1>-->
+
+  <!--<h6>Boo!</h6>-->
+
+  <!--<app-post-form (onAdd)="updatePosts($event)">-->
+      <!--<p *ngIf="posts.length === 0">Нет доступных постов</p>-->
+  <!--</app-post-form>-->
+
+  <!--<hr />-->
+
+  <!--<app-post *ngFor="let p of posts; let id = index;"-->
+            <!--[myPost]="p"-->
+            <!--[idx]="id"-->
+            <!--(onRemove)="deletePost($event)">-->
+    <!--<div #postInfo>-->
+      <!--<small *ngIf="p.text.length > 10; else short">Пост длинный</small>-->
+      <!--<ng-template #short>-->
+        <!--<small>Пост короткий</small>-->
+      <!--</ng-template>-->
+    <!--</div>-->
+
+  <!--</app-post>-->
+
+<!--</div>-->
+<h4>Lorem ipsum dolor sit amet.</h4>
+<p [appStyle]="'red'" [dStyles]="{border: '1px solid blue', borderRadius: '3px', fontWeight: 'bold'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, odio, voluptate. Mollitia, nesciunt pariatur porro quia reprehenderit sed ut! Fugiat.</p>
+
+<p [appStyle]="'blue'" [dStyles]="{border: '1px solid red', borderRadius: '3px', fontWeight: 'bold'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, odio, voluptate. Mollitia, nesciunt pariatur porro quia reprehenderit sed ut! Fugiat.</p>
+
+
