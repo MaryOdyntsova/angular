@@ -12,6 +12,7 @@ export interface Post {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  isVisible = true;
   title = 'MyApp';
   buttonToggle = true;
 

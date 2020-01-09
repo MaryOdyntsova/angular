@@ -9,6 +9,7 @@ import { PostFormComponent } from './post-form/post-form.component';
 import { PostComponent } from './post/post.component';
 import {NgbAlertModule, NgbModule, NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 import {StyleDirective} from './style.directive';
+import { StructuredDirective } from './structured.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {StyleDirective} from './style.directive';
     Post4Component,
     PostFormComponent,
     PostComponent,
-    StyleDirective
+    StyleDirective,
+    StructuredDirective
   ],
   imports: [
     BrowserModule,
