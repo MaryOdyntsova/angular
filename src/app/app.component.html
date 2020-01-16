@@ -24,14 +24,18 @@
 
 <!--</div>-->
 <h4>Lorem ipsum dolor sit amet.</h4>
-<p [appStyle]="'red'" [dStyles]="{border: '1px solid blue', borderRadius: '3px', fontWeight: 'bold'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, odio, voluptate. Mollitia, nesciunt pariatur porro quia reprehenderit sed ut! Fugiat.</p>
+<p [appStyle]="'yellow'" [dStyles]="{border: '1px solid blue', borderRadius: '3px', fontWeight: 'bold'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, odio, voluptate. Mollitia, nesciunt pariatur porro quia reprehenderit sed ut! Fugiat.</p>
 
-<p [appStyle]="'blue'" [dStyles]="{border: '1px solid red', borderRadius: '3px', fontWeight: 'bold'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, odio, voluptate. Mollitia, nesciunt pariatur porro quia reprehenderit sed ut! Fugiat.</p>
+<p [appStyle]="'white'" [dStyles]="{border: '1px solid red', borderRadius: '3px', fontWeight: 'bold'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, odio, voluptate. Mollitia, nesciunt pariatur porro quia reprehenderit sed ut! Fugiat.</p>
 
 <button class="btn btn-dark" (click)="isVisible = !isVisible">Click the magic!</button>
 
 <div *appStructuredDirective="!isVisible">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad culpa dicta est incidunt obcaecati! Aperiam dignissimos error est id inventore laboriosam quo repellat similique, ut voluptatibus. Maxime quis rerum voluptatem.</p>
 </div>
+
+<p>
+  {{'Hello' | exPipe}}
+</p>
 
 
