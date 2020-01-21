@@ -15,6 +15,8 @@ export class AppComponent implements OnInit {
   isVisible = true;
   title = 'MyApp';
   buttonToggle = true;
+  search: string = '';
+  searchByField: string = 'title';
 
   arr: any = [{
     name: 'Post 1',
@@ -23,18 +25,24 @@ export class AppComponent implements OnInit {
       {name: 'MaryOd 1', comment: 'lorem 1'},
       {name: 'MaryOd 1', comment: 'lorem 2'},
       {name: 'MaryOd 1', comment: 'lorem 3'}]
-  },{
-      name: 'Post 2',
-      user: 'Mariia 2',
-      comments: [
-        {name: 'MaryOd 2', comment: 'lorem 1'},
-        {name: 'MaryOd 2', comment: 'lorem 2'},
-        {name: 'MaryOd 2', comment: 'lorem 3'}]
-    }];
+  }, {
+    name: 'Post 2',
+    user: 'Mariia 2',
+    comments: [
+      {name: 'MaryOd 2', comment: 'lorem 1'},
+      {name: 'MaryOd 2', comment: 'lorem 2'},
+      {name: 'MaryOd 2', comment: 'lorem 3'}]
+  }];
 
   posts: Post[] = [
     {title: 'Хочу выучить Ангуляр компоненты', text: 'Я все еще учу Ангуляр компоненты'},
     {title: 'Следующий блок', text: 'Будет про директивы и еще про пайпы'}
+  ];
+
+  newPosts: Post[] = [
+    {title: 'Beer', text: 'Очень невкусный Beer'},
+    {title: 'Bread', text: 'Очень вкусный Bread'},
+    {title: 'Salmon', text: 'Очень жирный Salmon'}
   ];
 
   constructor() {
@@ -59,6 +67,13 @@ export class AppComponent implements OnInit {
 
   deletePost(index) {
     this.posts.splice(index, 1);
+  }
+
+  addPost(){
+    this.newPosts.unshift({
+      title: 'Angular 8',
+      text: 'Learn Angular8'
+    })
   }
 
 }

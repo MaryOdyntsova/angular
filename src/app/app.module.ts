@@ -11,6 +11,7 @@ import {NgbAlertModule, NgbModule, NgbPaginationModule} from '@ng-bootstrap/ng-b
 import {StyleDirective} from './style.directive';
 import { StructuredDirective } from './structured.directive';
 import { ExPipePipe } from './ex-pipe.pipe';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ExPipePipe } from './ex-pipe.pipe';
     PostComponent,
     StyleDirective,
     StructuredDirective,
-    ExPipePipe
+    ExPipePipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

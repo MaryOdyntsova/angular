@@ -38,4 +38,16 @@
   {{'Hello' | exPipe}}
 </p>
 
+<input type="text" [(ngModel)]="search" class="input-group"/>
+<button class="btn btn-info" (click)="searchByField = 'title'; search = ''">Search by Title</button>
+<button class="btn btn-danger" (click)="searchByField = 'text'; search = ''">Search by Text</button>
+<hr/>
+<button class="btn bth-info" (click)="addPost()">Add post</button>
+<div>
+  <div *ngFor="let newPost of newPosts | filter:search:searchByField" class="alert-info p-2 mb-2">
+    <h6>{{newPost.title}}</h6>
+    <div>{{newPost.text}}</div>
+  </div>
+</div>
+
 
